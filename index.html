@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="pop-up-bg" class="pop-up-bg">
+      <div class="pop-up-container" id="pop-up-container">
+        <h1>Choose Your Level</h1>
+        <button class="btn" id="easy">Easy</button>
+        <button class="btn" id="medium">Medium</button>
+        <button class="btn" id="hard">Hard</button>
+        <button class="btn" id="impossible">Impossible</button>
+      </div>
+    </div>
+    <div class="page">
+      <svg
+        id="sw-js-blob-svg"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        class="page-svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+            <stop
+              id="stop1"
+              stop-color="rgba(60, 99, 252, 1)"
+              offset="0%"
+            ></stop>
+            <stop
+              id="stop2"
+              stop-color="rgba(60, 99, 252, 1)"
+              offset="100%"
+            ></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#sw-gradient)"
+          d="M27.5,-26.6C35,-19.9,40.2,-9.9,39.9,-0.3C39.6,9.4,33.9,18.8,26.3,25.9C18.8,33.1,9.4,38,1.4,36.6C-6.6,35.2,-13.2,27.5,-20.4,20.3C-27.7,13.2,-35.7,6.6,-37.2,-1.5C-38.8,-9.7,-33.9,-19.3,-26.6,-26.1C-19.3,-32.8,-9.7,-36.6,0.1,-36.7C9.9,-36.8,19.9,-33.3,27.5,-26.6Z"
+          width="100%"
+          height="100%"
+          transform="translate(50 50)"
+          stroke-width="0"
+          style="transition: all 0.3s ease 0s"
+          stroke="url(#sw-gradient)"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="sub-container">
+          <div class="point-icon"></div>
+          <h1 id="points">420</h1>
+        </div>
+        <div class="sub-container2">
+          <h1 id="word">Completion</h1>
+          <input type="text" id="userword" placeholder="Respell the word" />
+          <div class="timer" id="timer">
+            <div class="timer-bar" id="timer-bar"></div>
+          </div>
+          <h2 id="timer-label"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

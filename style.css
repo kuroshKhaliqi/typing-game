@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pop-up-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-container {
+  background-color: rgba(60, 99, 252, 1);
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 15px;
+}
+.pop-up-container h1 {
+  margin-bottom: 1.5em;
+}
+.btn {
+  padding: 1em;
+  margin: 0.5em;
+  width: 100%;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  outline: 3px solid rgb(185, 185, 253);
+}
+
+#easy {
+  background-color: rgb(0, 166, 0);
+}
+#medium {
+  background-color: rgb(141, 180, 0);
+}
+#hard {
+  background-color: rgb(195, 0, 0);
+}
+#impossible {
+  background-color: rgb(0, 12, 0);
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #340d9a;
+  color: white;
+  padding: 3em;
+  overflow: hidden;
+}
+
+.page-svg {
+  width: 500px;
+  position: absolute;
+  top: -150px;
+  right: -150px;
+}
+
+.container {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  background-color: #2a0c7d;
+  position: relative;
+}
+
+.sub-container {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0;
+}
+
+.sub-container2 {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 0;
+}
+
+.point-icon {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  transform: rotate(45deg);
+  border: 1px solid black;
+  margin: 0 1em;
+}
+
+#points {
+  font-size: 2.5rem;
+}
+
+#word {
+  margin-bottom: 2.5em;
+  font-size: 3rem;
+}
+
+#userword {
+  padding: 1em 2em;
+  text-align: center;
+  background-color: #390eaa;
+  color: white;
+  outline: 0;
+  border: 0;
+}
+
+#timer {
+  margin-top: 2em;
+  width: 30%;
+  background-color: #280b74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+#timer-bar {
+  border: 3px solid yellow;
+  width: 70%;
+  border-radius: 2px;
+}
